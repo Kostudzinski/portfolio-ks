@@ -1,0 +1,521 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    background-color: black;
+}
+
+
+/*loading*/
+
+.loading {
+    background: url('../img/ico_loading.gif') no-repeat center center;
+}
+
+
+/*NAWIGACJA*/
+
+#navigation {
+    height: 50px;
+    background: none;
+    border: none;
+    transition: 0.5s;
+}
+
+#nav li {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    padding: 0px 20px 0px 20px;
+    line-height: 50px;
+}
+
+.navbar-default .navbar-nav>li>a.english {
+    color: gainsboro;
+    padding-right: 20px;
+    transition: .5s;
+}
+
+.container-fluid {
+    transition: .5s;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    transition: 0.5s;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: lightgrey;
+}
+
+.navbar-default .navbar-nav>li>a:focus {
+    color: darkgrey;
+}
+
+#nav ul {
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-default {
+    background: none;
+    border: none;
+}
+
+
+/*LOGO*/
+
+.container-fluid>.navbar-collapse,
+.container-fluid>.navbar-header,
+.container>.navbar-collapse,
+.container>.navbar-header {
+    margin-left: 10px;
+}
+
+.navbar-default .navbar-brand {
+    width: 50px;
+    background-image: url(../img/Logo/k-LOGO.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: 1s;
+}
+
+.showlogo {
+    opacity: 1;
+}
+
+#navigation.view {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+
+/*SEKCJA HEAD*/
+
+#head {
+    width: 100%;
+    height: 100%;
+}
+
+#container-head {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/img/portfolio4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#cover {
+    width: 100%;
+    height: 100%;
+    background: rgba(1, 1, 1, 0.8);
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(1, 1, 1, 1), rgba(1, 1, 1, 0.7));
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(1, 1, 1, 1), rgba(1, 1, 1, 0.7));
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(1, 1, 1, 1), rgba(1, 1, 1, 0.7));
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(1, 1, 1, 1), rgba(1, 1, 1, 0.7));
+    /* Standard syntax */
+}
+
+.image-container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.main-logo {
+    width: 23%;
+    padding-top: 10px;
+}
+
+#name {
+    font-size: 7vw;
+    font-weight: 100;
+    position: relative;
+    bottom: 14vw;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+span {
+    font-weight: 900;
+}
+
+.metalic {
+    background: -webkit-linear-gradient(bottom right, white, #fefefe, #a2a2a2, #fefefe, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.front-end {
+    font-size: 4vw;
+    position: relative;
+    bottom: 12vw;
+}
+
+.graphic {
+    font-size: 3vw;
+    position: relative;
+    bottom: 10vw;
+}
+
+
+/*SEKCJA O MNIE*/
+
+#aboutme {
+    height: 600px;
+    width: 100%;
+}
+
+#container-aboutme {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/img/header-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
+    /* Standard syntax */
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    top: 50px;
+    font-size: 70px;
+    transition: 1s;
+}
+
+h1:hover, h1.hovered {
+    color: #7a7a7a;
+}
+
+h1:before, h1.hovered:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #7a7a7a;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+h1:hover:before, h1.hovered:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+#text {
+    width: 100%;
+    height: 70vh;
+    font-size: 25px;
+    font-weight: 100;
+    color: black;
+    background-color: none;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 50px;
+}
+
+.social {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    background-color: black;
+    color: white;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: .5s;
+}
+
+.social a {
+    color: white;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    margin: auto;
+}
+
+.social:hover {
+    background-color: white;
+}
+
+.social:hover a {
+    color: black;
+}
+
+
+/*UMIEJETNOSCI*/
+
+#my-skills {
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/img/wall.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#container-skills {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+#container-skills p {
+    position: relative;
+    left: 0;
+    right: 0;
+    padding-top: 50px;
+    margin: auto;
+    width: 70%;
+    text-align: center;
+}
+
+.kontener-ikon-front {
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.neonlight {
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.neon {
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+    transition: .5s;
+}
+
+.neonlight:hover {
+    color: #ffb;
+    text-decoration: none;
+}
+
+.col-xs-6>img {
+    padding-top: 50px;
+}
+
+.col-xs-4>img {
+    padding-top: 100px;
+}
+
+.padding-bottom {
+    padding-bottom: 200px;
+}
+
+@-webkit-keyframes neon1 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 70px #fff, 0 0 80px #fff, 0 0 100px #fff, 0 0 150px #fff;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 35px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 75px #fff;
+    }
+}
+
+@keyframes neon1 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 70px #fff, 0 0 80px #fff, 0 0 100px #fff, 0 0 150px #fff;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #7FFF00, 0 0 35px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 75px #fff;
+    }
+}
+
+/*SEKCJA PORTFOLIO*/
+
+#my-portfolio {
+    margin: 0;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/img/SW7c8d.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*SLIDER*/
+
+#slider {
+    position: relative;
+    overflow: hidden; 
+    height: 600px; 
+    
+}
+
+.slide-show {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.single-slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.single-slide img {
+    border: none;
+    width: 100%;
+    min-height: 100%; 
+    
+}
+
+.slider-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 5;
+    color: white;
+    text-align: center;
+    font-size: 5em;
+    text-transform: uppercase;
+    transition: 1s;
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+.dodatkowy {
+    font-size: 2vw;
+    width: 70%;
+    top: 70%;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+
+}
+
+.single-slide .linki-portfolio a{
+    color: white;
+    text-decoration: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.single-slide .linki-portfolio a:hover {
+    color: white;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+.slider-arrows a {
+    position: relative;
+    top: 300px;
+    font-size: 5vw;
+    color: white;
+    
+}
+
+.prev-slide {
+    z-index: 5;
+    left: 1vw;
+}
+
+.next-slide {
+    z-index: 5;
+    left:91vw;
+}
+
+.slider-arrows a:hover {
+  color: white;    
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+#portfolio {
+    padding-bottom: 200px;
+}
+
+/*SEKCJA CONTACT*/
+
+#contact {
+    background-image:  linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+    width: 100%;
+    height: auto;
+    color: white;
+}
+
+.formkontener {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.input1 {
+    width: 80%;
+    color: black;
+}
+
+.input2 {
+    width: 80%;
+    height: 125px;
+        color: black;
+
+}
+
+#buttonplace {
+    margin-top: 20px;
+    width: 100%;
+}
+
+#buttonplace>.btn {
+    color: white;
+    background-color: darkgrey;
+    transition: .5s;
+}
+
+#buttonplace>.btn:hover {
+    color: black;
+    background-color: aliceblue;
+    text-decoration: none;
+    
+}
+
+.formkontener>p {
+    font-size: 20px;
+    text-align: right;
+    padding-right: 10vw;
+}
+
