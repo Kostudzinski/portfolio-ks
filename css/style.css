@@ -100,6 +100,12 @@ body {
     height: 100%;
 }
 
+#circles {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
 #container-head {
     width: 100%;
     height: 100%;
@@ -136,7 +142,7 @@ body {
 }
 
 #name {
-    font-size: 7vw;
+    font-size: 8vw;
     font-weight: 100;
     position: relative;
     bottom: 14vw;
@@ -154,15 +160,15 @@ span {
 }
 
 .front-end {
-    font-size: 4vw;
+    font-size: 4.5vw;
     position: relative;
     bottom: 12vw;
 }
 
 .graphic {
-    font-size: 3vw;
+    font-size: 3.5vw;
     position: relative;
-    bottom: 10vw;
+    bottom: 11vw;
 }
 
 
@@ -171,12 +177,6 @@ span {
 #aboutme {
     height: 600px;
     width: 100%;
-}
-
-#circles {
-    position: absolute;
-    width: 100%;
-    height: auto;
 }
 
 #container-aboutme {
@@ -463,14 +463,14 @@ h1:before, h1.hovered:before {
     z-index: 5;
     color: white;
     text-align: center;
-    font-size: 5em;
+    font-size: 70px;
     text-transform: uppercase;
     transition: 1s;
     background-color: rgba(0, 0, 0, 0.2)
 }
 
-.dodatkowy {
-    font-size: 2vw;
+.added {
+    font-size: 25px;
     width: 70%;
     top: 70%;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
