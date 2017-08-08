@@ -1,0 +1,10 @@
+* {
+    margin: none;
+}
+
+#portfolio {
+    background-color: lightgrey;
+    padding: 2%;
+    box-sizing: border-box;
+    text-align: center;
+}

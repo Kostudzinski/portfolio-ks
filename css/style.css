@@ -42,15 +42,15 @@ body {
 
 .navbar-default .navbar-nav>li>a {
     color: white;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-    color: lightgrey;
-}
-
-.navbar-default .navbar-nav>li>a:focus {
-    color: darkgrey;
+    color: white;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+    transition: 1s;
 }
 
 #nav ul {
@@ -60,7 +60,7 @@ body {
 }
 
 .navbar-default {
-    background: none;
+    background: black;
     border: none;
 }
 
@@ -84,7 +84,7 @@ body {
     transition: 1s;
 }
 
-.showlogo {
+.navbar-brand.showlogo {
     opacity: 1;
 }
 
@@ -109,7 +109,7 @@ body {
     background-position: center;
 }
 
-#cover {
+.cover-black {
     width: 100%;
     height: 100%;
     background: rgba(1, 1, 1, 0.8);
@@ -173,6 +173,12 @@ span {
     width: 100%;
 }
 
+#circles {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
 #container-aboutme {
     width: 100%;
     height: 100%;
@@ -183,7 +189,7 @@ span {
     background-attachment: fixed;
 }
 
-.cover {
+.cover-white {
     width: 100%;
     height: 100%;
     background: rgba(255, 255, 255, 0.8);
@@ -206,7 +212,7 @@ h1 {
     transition: 1s;
 }
 
-h1:hover, h1.hovered {
+h1.hovered {
     color: #7a7a7a;
 }
 
@@ -225,7 +231,7 @@ h1:before, h1.hovered:before {
     transition: all 0.3s ease-in-out 0s;
 }
 
-h1:hover:before, h1.hovered:before{
+ h1.hovered:before{
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
@@ -279,6 +285,31 @@ h1:hover:before, h1.hovered:before{
 
 
 /*UMIEJETNOSCI*/
+
+#skills {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/img/portfolio2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.cover-black2 {
+    width: 100%;
+    height: 100%;
+    background: rgba(1, 1, 1, 0.8);
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(1, 1, 1, 1), rgba(1, 1, 1, 0.8));
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(1, 1, 1, 1), rgba(1, 1, 1, 0.8));
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(1, 1, 1, 1), rgba(1, 1, 1, 0.8));
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(1, 1, 1, 1), rgba(1, 1, 1, 0.8));
+    /* Standard syntax */
+}
 
 #my-skills {
     margin: 0;
@@ -380,14 +411,32 @@ h1:hover:before, h1.hovered:before{
 #slider {
     position: relative;
     overflow: hidden; 
-    height: 600px; 
+    height: 700px; 
     
+}
+
+#slider:hover .cover-dark{
+    opacity: 1;
 }
 
 .slide-show {
     position: absolute;
     height: 100%;
     width: 100%;
+}
+
+.cover-dark {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(1,1,1,0.6);
+    opacity: 0;
+    transition: 1s;
 }
 
 .single-slide {
@@ -400,6 +449,7 @@ h1:hover:before, h1.hovered:before{
     border: none;
     width: 100%;
     min-height: 100%; 
+    transition: 1s;
     
 }
 
@@ -466,16 +516,17 @@ h1:hover:before, h1.hovered:before{
 }
 
 #portfolio {
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
 
 /*SEKCJA CONTACT*/
 
 #contact {
-    background-image:  linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4));
     width: 100%;
     height: auto;
     color: white;
+    position: relative;
+    overflow: hidden;
 }
 
 .formkontener {
@@ -519,3 +570,8 @@ h1:hover:before, h1.hovered:before{
     padding-right: 10vw;
 }
 
+#socialmedia {
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+}

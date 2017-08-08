@@ -1,0 +1,23 @@
+@media screen and (max-width: 900px) {
+    #container-aboutme {
+        background-size: 150%;
+    }
+    #my-portfolio {
+        background-size: 150%;
+    }
+    #my-skills {
+        background-size: 150%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #container-aboutme {
+        background-size: 180%;
+    }
+    #my-portfolio {
+        background-size: 180%;
+    }
+    #my-skills {
+        background-size: 180%;
+    }
+}

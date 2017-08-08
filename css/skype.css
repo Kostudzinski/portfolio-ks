@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+#skype-container {
+    width: 100%;
+    text-align: center;
+    padding-top: 2%;
+}
+
+#SkypeButton_Call_kostudzinski_1 {
+    font-size: 50px;
+    margin: none;
+}
+
+#image {
+    background-image: url(skype.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100vw;
+    height: 600px;;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    color: #12a5f4;
+    font-family: fantasy;
+}

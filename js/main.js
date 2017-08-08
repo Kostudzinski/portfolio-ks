@@ -7,12 +7,12 @@ $(document).ready(function () {
     scrollSlow();
 
     showLogo();
-    
-//    neon();
-    
+        
     sliderReady();
     
-    hoverTrigger();
+    underline();
+    
+    parallax();
 
 });
 
@@ -22,8 +22,8 @@ $(document).ready(function () {
 
 $(window).scroll(function () {
     addBackground();
-//    neon();
-    hoverTrigger();
+    underline();
+    showLogo();
 })
 
 function addBackground() {
@@ -38,39 +38,51 @@ function addBackground() {
     }
 };
 
-function hoverTrigger() {
-        if ($(window).scrollTop() >= 350) {
+function underline() {
+    var underline1 = $(".underline1");
+    var position = underline1.position();
+    var underline2 = $(".underline2");
+    var position2 = underline2.position();
+    var underline3 = $(".underline3");
+    var position3 = underline3.position();
+    var underline4 = $(".underline4");
+    var position4 = underline4.position();
 
-        $('.hover').addClass('hovered');
+        if ($(window).scrollTop() >= position.top - 450) {
+
+        underline1.addClass('hovered');
 
     }   else {
-        $('.hover').removeClass('hovered');
+        underline1.removeClass('hovered');
 
-    }
+    };
+            if ($(window).scrollTop() >= position2.top - 450) {
+
+        underline2.addClass('hovered');
+
+    }   else {
+        underline2.removeClass('hovered');
+
+    };
+            if ($(window).scrollTop() >= position3.top - 450) {
+
+        underline3.addClass('hovered');
+
+    }   else {
+        underline3.removeClass('hovered');
+
+        console.log(position4.top);
+        
+    };
+            if ($(window).scrollTop() >= position4.top + 3000) {
+
+        underline4.addClass('hovered');
+
+    }   else {
+        underline4.removeClass('hovered');
+
+    };
 };
-
-//NEON
-
-//function neon() {
-//
-//    if ($(window).scrollTop() >= 20) {
-//
-//        $('.neon1').addClass('neon');
-//
-//    } else {
-//        $('.neon1').removeClass('neon');
-//
-//    }
-//
-//    if ($(window).scrollTop() >= 50) {
-//
-//        $('.neon2').addClass('neon');
-//
-//    } else {
-//        $('.neon2').removeClass('neon');
-//
-//    }
-//};
 
 //POKAŻ LOGO
 
@@ -104,7 +116,7 @@ function scrollSlow() {
             // Using jQuery's animate() method to add smooth page scroll
             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
-                    scrollTop: $(hash).offset().top
+                    scrollTop: $(hash).offset().top - 70
                 }, 500,
                 //                              function(){
                 //   
@@ -174,5 +186,12 @@ var slideIndex = 0;
         });
         
     };
+    
+};
+
+function parallax() {
+    window.addEventListener('scroll', parallax, false);
+    var backgroundTop = document.getElementById('circles');
+    backgroundTop.style.top = -(window.pageYOffset / 2)+"px";
     
 }
