@@ -88,18 +88,21 @@
         /* Standard syntax */
     }
     #name {
-        padding-top: 50px;
+        padding-top: 0;
         font-size: 12vw;
     }
     .image-container {
         padding-top: 100px;
     }
     .front-end {
-        padding-top: 30px;
+        padding-top: 15px;
         font-size: 9vw;
     }
     .graphic {
-        padding-top: 20px;
+        padding-top: 10px;
         font-size: 8vw;
+    }
+    .main-logo {
+        width: 40%;
     }
 }
