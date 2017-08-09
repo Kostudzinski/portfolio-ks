@@ -59,10 +59,10 @@
         opacity: 1;
     }
     .added {
-        font-size: 2vw;
-    }
-    .links-porfolio {
         font-size: 3vw;
+    }
+    .single-slide .links-portfolio a {
+        font-size: 10vw;
     }
     .social {
         font-size: 23px;
