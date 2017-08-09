@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-
+    <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
 </head>
 
 <body>
@@ -72,14 +72,19 @@
                 <h1 class="underline1">O mnie</h1>
                 <div id="text"><br>
                     <p>Absolwent wydziału Architektury Politechniki Krakowskiej na kierunku Architektura i Urbanistyka. Projektant i twórca stron internetowych, identyfikacji wizualnych, różnego rodzaju grafik wektorowych i bitmapowych oraz materiałów przeznaczonych do druku. Z zamiłowania malarz obrazów abstrakcyjnych i informelu.</p>
-                    <div class="social"><a target="_blank" href="https://www.linkedin.com/in/konrad-studzi%C5%84ski-641611143/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
-                    <div class="social"><a target="_blank" href="skype.html"><i class="fa fa-skype" aria-hidden="true"></i>
-                    </a></div>
-                    <div class="social"><a target="_blank" href="https://github.com/Kostudzinski"><i class="fa fa-github" aria-hidden="true"></i>
-                    </a></div>
-
+                    <div id="socialmedia">
+                        <div class="social"><a target="_blank" href="https://www.linkedin.com/in/konrad-studzi%C5%84ski-641611143/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                        <a href="skype:kostudzinski">
+                            <div class="social"><i class="fa fa-skype" aria-hidden="true"></i></div>
+                        </a>
+                        <div class="social"><a target="_blank" href="https://github.com/Kostudzinski"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
                 </div>
+
             </div>
+
         </div>
     </section>
 
@@ -147,7 +152,7 @@
                 <div class="single-slide">
                     <img src="img/Slider/slide1NEW.jpg" alt="">
                     <div class="cover-dark">
-                        <p class="slider-caption linki-portfolio"><a target="_blank" href="https://kostudzinski.github.io/moja_strona/">Strona WWW</a></p>
+                        <p class="slider-caption links-portfolio"><a target="_blank" href="https://kostudzinski.github.io/moja_strona/">Strona WWW</a></p>
                         <p class="slider-caption added">Strona przygotowana po kursie Akadademii 108, jako wstępne portfolio, utworzona przy użyciu technologii HTML5, CSS, Javascript i jQuery</p>
                     </div>
                 </div>
@@ -155,7 +160,7 @@
                 <div class="single-slide">
                     <img src="img/Slider/slide2NEW.jpg" alt="">
                     <div class="cover-dark">
-                        <p class="slider-caption linki-portfolio"><a target="_blank" href="https://kostudzinski.github.io/portfolio/">Strona WWW</a></p>
+                        <p class="slider-caption links-portfolio"><a target="_blank" href="https://kostudzinski.github.io/portfolio/">Strona WWW</a></p>
                         <p class="slider-caption added">Strona przygotowana na kursie Akadademii 108, jako przykładowe portfolio, utworzona przy użyciu technologii HTML5, CSS, jQuery oraz Bootstrap</p>
                     </div>
                 </div>
@@ -163,7 +168,7 @@
                 <div class="single-slide">
                     <img src="img/Slider/slide3NEW.jpg" alt="">
                     <div class="cover-dark">
-                        <p class="slider-caption linki-portfolio"><a target="_blank" href="https://kostudzinski.github.io/Bootstrap-website-/">Strona WWW</a></p>
+                        <p class="slider-caption links-portfolio"><a target="_blank" href="https://kostudzinski.github.io/Bootstrap-website-/">Strona WWW</a></p>
                         <p class="slider-caption added">Strona przygotowana na kursie Akadademii 108, utworzona przy użyciu technologii HTML5, CSS, jQuery oraz Bootstrap</p>
                     </div>
                 </div>
@@ -171,14 +176,14 @@
                 <div class="single-slide">
                     <img src="img/Slider/slide4NEW.jpg" alt="">
                     <div class="cover-dark">
-                        <p class="slider-caption linki-portfolio"><a target="_blank" href="https://www.baozihouse.pl/">Strona WWW</a></p>
+                        <p class="slider-caption links-portfolio"><a target="_blank" href="https://www.baozihouse.pl/">Strona WWW</a></p>
                         <p class="slider-caption added">Strona przygotowana na zlecenie restauracji Baozi House, utworzona przy użyciu witryny Wix.pl</p>
                     </div>
                 </div>
                 <div class="single-slide">
                     <img src="img/Slider/slide5NEW.jpg" alt="">
                     <div class="cover-dark">
-                        <p class="slider-caption linki-portfolio"><a target="_blank" href="graficzne/porfolio.html">Portfolio graficzne</a></p>
+                        <p class="slider-caption links-portfolio"><a target="_blank" href="graficzne/porfolio.html">Portfolio graficzne</a></p>
                         <p class="slider-caption added">Link do portfolio przedstawiającego wybrane prace graficzne oraz malarskie</p>
                     </div>
                 </div>
@@ -206,12 +211,12 @@
             <p>e-mail: kostudzinski@gmail.com</p><br><br>
             <form action="https://formspree.io/kostudzinski@gmail.com" method="POST">
                 <div class="row">
-                    <div class="col-lg-6 col-xs-12 ">
+                    <div class="col-lg-6 col-xs-12 form">
                         <input class="input1" type="text" name="imie" placeholder="imię"><br><br>
                         <input class="input1" type="text" name="nazwisko" placeholder="nazwisko"><br><br>
                         <input class="input1" type="text" name="email" placeholder="e-mail"><br><br>
                     </div>
-                    <div class="col-lg-6 col-xs-12 ">
+                    <div class="col-lg-6 col-xs-12 form">
                         <input class="input2" type="text" name="wiadomosc" placeholder="wiadomosc">
                     </div>
 
@@ -222,13 +227,15 @@
                 <div id="buttonplace">
                     <input type="submit" class="btn btn-primary">
                 </div>
+
             </form>
         </div>
         <div id="socialmedia">
             <div class="social"><a target="_blank" href="https://www.linkedin.com/in/konrad-studzi%C5%84ski-641611143/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
             </div>
-            <div class="social"><a target="_blank" href="skype.html"><i class="fa fa-skype" aria-hidden="true"></i></a>
-            </div>
+            <a href="skype:kostudzinski">
+                <div class="social"><i class="fa fa-skype" aria-hidden="true"></i></div>
+            </a>
             <div class="social"><a target="_blank" href="https://github.com/Kostudzinski"><i class="fa fa-github" aria-hidden="true"></i></a>
             </div>
         </div>
@@ -242,6 +249,7 @@
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <!--    JavaScript-->
     <script src="js/main.js"></script>
+
 </body>
 
 </html>

@@ -16,22 +16,26 @@
     }
     .slider-arrows a {
         font-size: 6vw;
-        top: 250px;
     }
-    #slider {
-        height: 500px;
-    }
+
 }
 
 @media screen and (max-width: 768px) {
+    #container-head {
+        background-size: 150%;
+    }
     #container-aboutme {
         background-size: 180%;
+        background-image: none;
     }
     #my-portfolio {
-        background-size: 180%;
+        background-size: 220%;
     }
     #my-skills {
         background-size: 180%;
+    }
+    #skills {
+        background-image: none;
     }
     h1 {
         font-size=30px;
@@ -50,13 +54,15 @@
     }
     .slider-arrows a {
         font-size: 8vw;
-        top: 200px;
-    }
-    #slider {
-        height: 400px;
     }
     #slider .cover-dark {
         opacity: 1;
+    }
+    .added {
+        font-size: 2vw;
+    }
+    .links-porfolio {
+        font-size: 3vw;
     }
     .social {
         font-size: 23px;
@@ -82,17 +88,17 @@
     }
     #name {
         padding-top: 50px;
-        font-size: 85px;
+        font-size: 12vw;
     }
     .image-container {
         padding-top: 100px;
     }
     .front-end {
         padding-top: 30px;
-        font-size: 45px;
+        font-size: 9vw;
     }
     .graphic {
         padding-top: 20px;
-        font-size: 35px
+        font-size: 8vw;
     }
 }

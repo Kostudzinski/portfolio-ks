@@ -13,9 +13,19 @@ $(document).ready(function () {
     underline();
     
     parallax();
+    
+    attachSkype();
 
 });
 
+
+function attachSkype(){
+    Skype.ui({
+        "name": "call",
+        "element": "skype",
+        "participants": ["kostudzinski"]
+    });
+}
 
 //PASEK NAWIGACJI
 
@@ -48,7 +58,7 @@ function underline() {
     var underline4 = $(".underline4");
     var position4 = underline4.position();
 
-        if ($(window).scrollTop() >= position.top - 450) {
+        if ($(window).scrollTop() >= position.top - 270) {
 
         underline1.addClass('hovered');
 
@@ -56,7 +66,7 @@ function underline() {
         underline1.removeClass('hovered');
 
     };
-            if ($(window).scrollTop() >= position2.top - 450) {
+            if ($(window).scrollTop() >= position2.top - 270) {
 
         underline2.addClass('hovered');
 
@@ -64,7 +74,7 @@ function underline() {
         underline2.removeClass('hovered');
 
     };
-            if ($(window).scrollTop() >= position3.top - 450) {
+            if ($(window).scrollTop() >= position3.top - 270) {
 
         underline3.addClass('hovered');
 
@@ -74,7 +84,7 @@ function underline() {
         console.log(position4.top);
         
     };
-            if ($(window).scrollTop() >= position4.top + 3000) {
+            if ($(window).scrollTop() >= position4.top + 3100) {
 
         underline4.addClass('hovered');
 
