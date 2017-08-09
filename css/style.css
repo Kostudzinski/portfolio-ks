@@ -497,6 +497,7 @@ h1.hovered:before {
     color: white;
     text-decoration: none;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    position: relative;
 }
 
 .single-slide .links-portfolio a:hover {
