@@ -106,4 +106,7 @@
     .main-logo {
         width: 40%;
     }
+    li {
+        background-color: black;
+    }
 }
